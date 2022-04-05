@@ -15,10 +15,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "debug.node.autoAttach": "on",
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
-  "gitlens.advanced.telemetry.enabled": false,
   "cSpell.language": "en",
   "cSpell.words": ["vite", "vitest"]
 }
