@@ -1,17 +1,17 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2021: true
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'airbnb-typescript', 'plugin:react/jsx-runtime', 'plugin:prettier/recommended'],
+  extends: ['plugin:react/recommended', 'airbnb', 'airbnb-typescript', 'plugin:react/jsx-runtime', 'plugin:prettier/recommended', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 13,
     sourceType: 'module',
-    project: './tsconfig.json',
+    project: './tsconfig.json'
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
@@ -19,6 +19,6 @@ module.exports = {
     'import/no-relative-packages': 'off',
     'import/no-extraneous-dependencies': 'off',
     'react/require-default-props': 'off',
-    'react/jsx-fragments': ['error', 'element'],
-  },
+    'react/jsx-fragments': ['error', 'element']
+  }
 };
