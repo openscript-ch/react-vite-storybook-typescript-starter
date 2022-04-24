@@ -1,14 +1,14 @@
 {
   "name": "react-vite-storybook-typescript-starter",
-  "version": "0.1.4",
-  "description": "A collapsible timeline component for React.",
+  "version": "0.1.0",
+  "description": "A React component library starter with Storybook, Vite and Typescript.",
   "keywords": [
     "react",
     "react-component",
     "typescript",
-    "timeline",
-    "interactive timeline",
-    "collapsible timeline"
+    "starter",
+    "vite",
+    "storybook"
   ],
   "homepage": "https://github.com/openscript-ch/react-vite-storybook-typescript-starter",
   "repository": {
@@ -31,11 +31,20 @@
       "require": "./dist/react-vite-storybook-typescript-starter.umd.js"
     }
   },
+  "size-limit": [
+    {
+      "path": "./dist/react-vite-storybook-typescript-starter.es.js"
+    },
+    {
+      "path": "./dist/react-vite-storybook-typescript-starter.umd.js"
+    }
+  ],
   "scripts": {
     "build": "vite build",
     "build:storybook": "build-storybook",
     "check:format": "eslint . --max-warnings 0",
     "check:types": "tsc --noEmit",
+    "check:size": "npm run build && size-limit",
     "postbuild": "node ./postbuild.js",
     "release:major": "standard-version --release-as major && git push --follow-tags",
     "release:minor": "standard-version --release-as minor && git push --follow-tags",
@@ -56,6 +65,7 @@
     "@babel/core": "^7.17.8",
     "@emotion/babel-plugin": "^11.7.2",
     "@emotion/react": "^11.8.2",
+    "@size-limit/preset-small-lib": "^7.0.8",
     "@storybook/addon-actions": "^6.4.20",
     "@storybook/addon-docs": "^6.4.20",
     "@storybook/addon-essentials": "^6.4.20",
@@ -82,6 +92,7 @@
     "eslint-plugin-storybook": "^0.5.8",
     "npm-check": "^5.9.2",
     "prettier": "^2.6.2",
+    "size-limit": "^7.0.8",
     "standard-version": "^9.3.2",
     "typescript": "^4.6.3",
     "vite": "^2.9.1",
