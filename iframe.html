@@ -354,10 +354,26 @@
   };
 </script>
 
-    
-    <script type="module" crossorigin src="./assets/iframe.7f861c24.js"></script>
-    <link rel="stylesheet" href="./assets/iframe.7ee421ea.css">
-  </head>
+    <script type="module" crossorigin src="./assets/iframe.50fcf9be.js"></script>
+  <style>
+    .sb-show-preparing-story:not(.sb-show-main) > :not(.sb-preparing-story) {
+      display: none;
+    }
+    .sb-show-preparing-docs:not(.sb-show-main) > :not(.sb-preparing-docs) {
+      display: none;
+    }
+    :not(.sb-show-preparing-story) > .sb-preparing-story,
+    :not(.sb-show-preparing-docs) > .sb-preparing-docs,
+    :not(.sb-show-nopreview) > .sb-nopreview,
+    :not(.sb-show-errordisplay) > .sb-errordisplay {
+      display: none;
+    }
+    #root[hidden],
+    #docs-root[hidden] {
+      display: none !important;
+    }
+  </style>
+</head>
   <body>
     <div class="sb-preparing-story sb-wrapper">
   <div class="sb-loader"></div>
