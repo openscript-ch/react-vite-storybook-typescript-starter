@@ -1,6 +1,6 @@
 # react-vite-storybook-typescript-starter
 
-A collapsible timeline component for React written in Typescript.
+This is a starter for providing reusable React component packages. It brings Typescript, Storybook and Vite along.
 
 ## Getting started
 
