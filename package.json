@@ -20,15 +20,12 @@
   },
   "author": "openscript GmbH <hi+npm@openscript.ch>",
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/react-vite-storybook-typescript-starter.umd.js",
-  "module": "./dist/react-vite-storybook-typescript-starter.es.js",
+  "main": "./react-vite-storybook-typescript-starter.umd.js",
+  "module": "./react-vite-storybook-typescript-starter.es.js",
   "exports": {
     ".": {
-      "import": "./dist/react-vite-storybook-typescript-starter.es.js",
-      "require": "./dist/react-vite-storybook-typescript-starter.umd.js"
+      "import": "./react-vite-storybook-typescript-starter.es.js",
+      "require": "./react-vite-storybook-typescript-starter.umd.js"
     }
   },
   "size-limit": [
