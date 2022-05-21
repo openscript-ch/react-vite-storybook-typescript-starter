@@ -95,6 +95,6 @@
     "vite": "2.9.9",
     "vite-plugin-dts": "1.1.1",
     "vite-plugin-markdown": "2.0.2",
-    "vitest": "0.12.7"
+    "vitest": "0.12.8"
   }
 }
