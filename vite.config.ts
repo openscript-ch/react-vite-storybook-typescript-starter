@@ -3,6 +3,14 @@ import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import packageJson from './package.json';
 
+const makeExternalPredicate = (externals: string[]) => {
+  if (externals.length === 0) {
+    return () => false;
+  }
+  const pattern = new RegExp(`^(${externals.join('|')})($|/)`);
+  return (id: string) => pattern.test(id);
+};
+
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
@@ -12,10 +20,11 @@ export default defineConfig({
       fileName: (format) => `react-vite-storybook-typescript-starter.${format}.js`,
     },
     rollupOptions: {
-      external: ['react'],
+      external: makeExternalPredicate([...Object.keys(packageJson.dependencies), ...Object.keys(packageJson.peerDependencies)]),
       output: {
         globals: {
           react: 'React',
+          '@emotion/react': '@emotion/react',
         },
       },
     },
@@ -23,6 +32,7 @@ export default defineConfig({
   plugins: [
     react({
       jsxImportSource: '@emotion/react',
+      exclude: [/\.stories\.(t|j)sx?$/, /node_modules/],
       babel: {
         plugins: ['@emotion/babel-plugin'],
       },

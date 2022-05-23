@@ -54,9 +54,11 @@
     "coverage": "vitest --coverage",
     "upgrade-interactive": "npm-check -u"
   },
-  "dependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+  "dependencies": {},
+  "peerDependencies": {
+    "@emotion/react": "^11.9.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.18.0",
