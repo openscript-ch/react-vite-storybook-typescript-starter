@@ -84,11 +84,11 @@
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-jsx-a11y": "6.6.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.30.1",
     "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-storybook": "0.5.12",
+    "eslint-plugin-storybook": "0.5.13",
     "npm-check": "5.9.2",
     "prettier": "2.7.1",
     "react": "18.2.0",
@@ -99,6 +99,6 @@
     "vite": "2.9.12",
     "vite-plugin-dts": "1.2.0",
     "vite-plugin-markdown": "2.0.2",
-    "vitest": "0.15.2"
+    "vitest": "0.16.0"
   }
 }
