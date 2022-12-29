@@ -27,5 +27,6 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'react/require-default-props': 'off',
     'react/jsx-fragments': ['error', 'element'],
+    'react/no-unknown-property': ['error', { ignore: ['css'] }],
   },
 };
