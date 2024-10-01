@@ -63,7 +63,7 @@
     "@babel/core": "^7.20.5",
     "@emotion/babel-plugin": "^11.9.2",
     "@emotion/react": "^11.9.0",
-    "@size-limit/preset-small-lib": "8.1.0",
+    "@size-limit/preset-small-lib": "11.1.6",
     "@storybook/addon-actions": "^7.0.0-beta.16",
     "@storybook/addon-docs": "^7.0.0-beta.16",
     "@storybook/addon-essentials": "^7.0.0-beta.16",
